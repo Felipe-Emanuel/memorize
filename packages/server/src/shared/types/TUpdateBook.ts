@@ -5,4 +5,5 @@ export type TUpdateBook = {
   publishedUrl: string
   heroPathUrl: string
   conclued: boolean
+  isActive: boolean
 }

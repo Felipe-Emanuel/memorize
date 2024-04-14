@@ -1,3 +1,6 @@
+## Roadmap
+- [Roadmap](roadmap.md)
+
 ## Memorize: Desbloqueie seu potencial criativo
 
 **Memorize** é um projeto que oferece aos escritores um conjunto de ferramentas visuais e informações valiosas para otimizar sua produtividade e aprimorar suas histórias.
