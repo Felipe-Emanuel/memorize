@@ -14,7 +14,7 @@
     <li><a href="#Exemplo-de-código">Exemplo de código</a></li>
     <li><a href="#Testes">Testes</a></li>
     <li><a href="#Instalação-e-Inicialização">Instalação e Inicialização</a></li>
-    <li><a href="#Desenho-arquitetural">Estrutura de Pastas</a></li>
+    <li><a href="#Estrutura-de-Pastas">Estrutura de Pastas</a></li>
   </ol>
 </details>
 
