@@ -1,6 +1,6 @@
 
 <p align="center">
-  <h3 align="center">App Gestão Força de Vendas</h3>
+  <h3 align="center">Memorize</h3>
 
 <details open="open">
   <summary>Sumário</summary>
@@ -11,6 +11,7 @@
     <li><a href="#Desafios">Desafios</a></li>
     <li><a href="#Tecnologias">Tecnologias</a></li>
     <li><a href="#Padronização-de-código">Padronização de código</a></li>
+    <li><a href="#Exemplo-de-código">Exemplo de código</a></li>
     <li><a href="#Testes">Testes</a></li>
     <li><a href="#Instalação-e-Inicialização">Instalação e Inicialização</a></li>
     <li><a href="#Desenho-arquitetural">Estrutura de Pastas</a></li>
@@ -102,6 +103,49 @@ Principais tecnologias utilizadas
     - Sempre que possível, componentes estão sendo utilizados da lib <a href="https://nextui.org/">NextUi</a>
     - HTTP State é usado sempre que possível para evitar tráfego
     - Hooks, funções específicas e etc estão sendo documentados com js docs
+
+## Exemplo de código
+
+```
+/**
+ * @type T should contain the type of object to be returned and should be apllyied on the getDataFn as exemple
+ * @param getDataFn async function to get data from database, local or anywhere. Should receive type of object returned and can receive a parameter
+ * @param cacheName name of the cache to be created
+ * @param cacheTime time of the cache
+ * @param enabled optional param to define if this request should be enabled
+ * @param initialData optional param to define a default value to this data
+ * @returns data and all methods from useQuery
+ * @example const getDataFn = (): TWordCount => ({}) as TWordCount
+ * @example const { data } = useQueryData(getDataFn, 'wordCounters', '12-hours')
+ */
+
+export function useQueryData<T>(
+  getDataFn: (params?: QueryFunction['arguments']) => Promise<T | undefined>,
+  cacheName: TCacheName,
+  cacheTime: TTimeToRefetchCache,
+  enabled?: boolean,
+  initialData?: T | InitialDataFunction<T>,
+) {
+  const staleTime = timeToRefetchCache[cacheTime]
+
+  const { data, ...rest } = useQuery(cacheName, getDataFn, {
+    refetchOnWindowFocus: false,
+    staleTime,
+    enabled,
+    initialData,
+  })
+
+  return {
+    data,
+    ...rest,
+  }
+}
+
+```
+
+> Manter o uso do js docs facilita o uso do entendimento da funcionalidade
+![image](https://github.com/Felipe-Emanuel/memorize/assets/108142146/42e73cb3-48f0-4997-9610-88040228b47c)
+
 
 ## Testes
 
