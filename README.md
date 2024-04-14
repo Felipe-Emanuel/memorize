@@ -5,15 +5,15 @@
 <details open="open">
   <summary>Sumário</summary>
   <ol>
-    <li><a href="#Sobre o Projeto">Sobre o projeto</a></li>
-    <li><a href="#Painel de Controle">Painel de Controle</a></li>
-    <li><a href="#Próximas Funcionalidades">Próximas Funcionalidades</a></li>
+    <li><a href="#Sobre-o-Projeto">Sobre o projeto</a></li>
+    <li><a href="#Painel-de-Controle">Painel de Controle</a></li>
+    <li><a href="#Próximas-Funcionalidades">Próximas Funcionalidades</a></li>
     <li><a href="#Desafios">Desafios</a></li>
     <li><a href="#Tecnologias">Tecnologias</a></li>
-    <li><a href="#Padronização de código">Padronização de código</a></li>
+    <li><a href="#Padronização-de-código">Padronização de código</a></li>
     <li><a href="#Testes">Testes</a></li>
-    <li><a href="#Instalação e Inicialização">Instalação e Inicialização</a></li>
-    <li><a href="#Desenho arquitetural">Estrutura de Pastas</a></li>
+    <li><a href="#Instalação-e-Inicialização">Instalação e Inicialização</a></li>
+    <li><a href="#Desenho-arquitetural">Estrutura de Pastas</a></li>
   </ol>
 </details>
 
