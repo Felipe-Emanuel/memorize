@@ -88,7 +88,7 @@ Principais tecnologias utilizadas
 
 - **Banco de Dados:**
   * Primsa 
-  * local - nosql
+  * local - sqlite
   * quandor fizer deploy: PostgreSql
 
 ## Padronização de código
