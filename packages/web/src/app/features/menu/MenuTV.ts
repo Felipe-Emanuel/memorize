@@ -1,7 +1,7 @@
 import { tv } from 'tailwind-variants'
 
 export const menuRootTV = tv({
-  base: 'w-full flex items-center justify-between max-w-[1500px] m-auto py-4'
+  base: 'w-full flex items-center justify-between max-w-[1500px] m-auto pt-4'
 })
 
 export const menuActionWrapperTV = tv({
@@ -25,7 +25,7 @@ export const autocompleteItemIconTV = tv({
 })
 
 export const helperWrapperTV = tv({
-  base: 'overflow-hidden rounded-xloverflow-hidden flex flex-col gap-2 fixed z-50 backdrop-blur-3xl bg-gray-400/25 ring-1 ring-gray-400/50 p-2 rounded-xl',
+  base: 'overflow-hidden rounded-xloverflow-hidden flex flex-col gap-2 fixed backdrop-blur-3xl bg-gray-400/25 ring-1 ring-gray-400/50 p-2 rounded-xl z-50',
   variants: {
     currentHelper: {
       true: 'w-full max-w-52 lg:max-w-72 xl:max-w-96 opacity-100 duration-1000',
