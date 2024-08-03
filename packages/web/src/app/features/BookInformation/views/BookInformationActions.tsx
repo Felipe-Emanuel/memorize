@@ -37,7 +37,7 @@ export function BookInformationActions() {
   } = useBookController()
   const { selectedBook } = useBook()
 
-  if (!selectedBook) return null
+  if (!selectedBook?.id) return null
 
   const markAsConcluedIcon = selectedBook?.conclued ? IoIosRemoveCircle : IoMdDoneAll
   const markAsConcluedText = selectedBook?.conclued

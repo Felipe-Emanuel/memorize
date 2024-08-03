@@ -14,7 +14,16 @@ export function BookInformationHeader() {
   const { sessionCustomer } = useUser()
   const { selectedBook } = useBook()
 
-  if (!selectedBook) return null
+  const userName = capitalizeName(sessionCustomer?.name.split(' ')[0])
+
+  if (!selectedBook?.id)
+    return (
+      <Text
+        align="center"
+        size="lg"
+        text={`Olá, ${userName}, adicione um novo livro para começar.`}
+      />
+    )
 
   return (
     <div className={tv.bookInformationHeaderWrapperTV()}>
@@ -28,7 +37,7 @@ export function BookInformationHeader() {
         <Text text={`${capitalizeName(selectedBook?.Theme ?? '')}`} color="gray" as="span" />
       </span>
       <Text
-        text={`Olá, ${capitalizeName(sessionCustomer?.name)}, as informações do seu livro estão prontas!`}
+        text={`Olá, ${userName}, as informações do seu livro estão prontas!`}
         as="small"
         size="sm"
         className={tv.welcomeTV()}

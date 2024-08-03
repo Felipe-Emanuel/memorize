@@ -40,10 +40,10 @@ describe('BookInformationHeader', () => {
   it('Should render welcome', async () => {
     renderComponent()
 
-    const welcome = await screen.findByText(/john doe/i)
+    const welcome = await screen.findByText(/john/i)
 
     expect(welcome.firstChild?.textContent).toBe(
-      'Olá, John Doe, as informações do seu livro estão prontas!'
+      'Olá, John, as informações do seu livro estão prontas!'
     )
   })
 

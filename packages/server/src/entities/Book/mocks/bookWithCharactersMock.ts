@@ -5,7 +5,7 @@ import { fakeBase64 } from '@constants/fakeBase64'
 
 export const bookWithCharactersMock: TBookWithCharacters = {
   book: {
-    ...bookEntitieMock,
+    ...bookEntitieMock
   },
   characters: [
     {
@@ -21,7 +21,7 @@ export const bookWithCharactersMock: TBookWithCharacters = {
       name: 'Horonel',
       race: 'Human',
       sexuality: 'man',
-      updatedAt: new Date(),
-    },
-  ],
+      updatedAt: new Date()
+    }
+  ]
 }

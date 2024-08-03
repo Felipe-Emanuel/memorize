@@ -22,7 +22,7 @@ export function BookInformationCardInfo() {
 
   const characterIcon = isCharactersCardHovered ? FaExternalLinkSquareAlt : FaUserSecret
 
-  if (!selectedBook) return null
+  if (!selectedBook?.id) return null
 
   const hero = (
     <Image
